@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: 'Pixel Font7';
+    src: url('/fonts/pixelfont-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --header-bg: #FFF9F1;
+    --header-border: #FFD6A0;
+    --nav-link: #1A1A1A;
+    --nav-icon:rgba(98, 68, 43, 1);
+    --b-switch-theme: #796D5C;
+}
+
+
+
+[data-theme='dark'] {
+    --header-bg: #FFF9F1;
+    --header-border: #FFD6A0;
+    --nav-link: #1A1A1A;
+    --nav-icon:rgba(98, 68, 43, 1);
+    --b-switch-theme: #796D5C;
+}
+
+[data-theme='light'] {
+    --header-bg: #FFF9F1;
+    --header-border: #FFD6A0;
+    --nav-link: #1A1A1A;
+    --nav-icon:rgba(98, 68, 43, 1);
+    --b-switch-theme: #796D5C;
+}
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color:  transparent;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit; 
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family:Arial;
+}
+button,
+input {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+button {
+    cursor: pointer;
+    background-color: inherit;
+}
+
+
+.wrapper {
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    overflow: hidden;
+}
