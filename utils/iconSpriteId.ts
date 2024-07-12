@@ -12,6 +12,9 @@ export enum IconId  {
 
 
 
+    // icons sidebar 
+    IconButtonSearch = "#button-search",
+
 
 
 
