@@ -21,7 +21,7 @@ export const navLinks = [
     {
         imgURL: IconId.IconNavGameEngine,
         route: "/engine",
-        label: "Игровые движки",
+        label: "Движки",
     },
     {
         imgURL: IconId.IconNavRemakes,
