@@ -1,0 +1,15 @@
+
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid var(--border-dark-purple);
+    padding-bottom: 10px;
+}
+
+.spollers {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

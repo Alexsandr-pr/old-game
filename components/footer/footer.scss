@@ -1,0 +1,35 @@
+
+
+.footer {
+    padding: 40px 0px;
+    border-top: 1px solid var(--pale-peach);
+    background: var(--ivory-header-background);
+}
+
+.footer__container {
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content {
+    display: flex;
+    column-gap: 56px;
+}
+
+.footer-content__item:not(:last-child) {
+    position: relative;
+    &::after {
+        content: "";
+        width: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -31px;
+        height: 6px;
+        position: absolute;
+        background-color: var(--coral);
+        border-radius: 50%;
+    }
+}

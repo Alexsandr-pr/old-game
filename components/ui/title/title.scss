@@ -1,0 +1,11 @@
+.block-title {
+    height: 40px;
+    padding: 10px;
+    background: var(--light-beige);
+    border-bottom: 1px solid var(--border-dark-purple);
+    .title {
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

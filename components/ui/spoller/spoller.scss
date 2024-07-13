@@ -1,0 +1,41 @@
+
+.spoller {
+    margin:0px 10px;
+}
+
+.spoller__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.spoller__button-title {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.spoller__button-trigger {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    border:1px solid var(--border-dark-purple);
+    color:var(--border-dark-purple);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    svg {
+        transition:transform 0.3s ease 0s;
+    }
+}
+.spoller.active {
+    .spoller__button-trigger {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+    .spoller__button {
+        margin-bottom: 10px;
+    }
+}

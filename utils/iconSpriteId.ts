@@ -7,14 +7,9 @@ export enum IconId  {
     IconNavAddon = "#nav-addon",
     IconNavGameEngine = "#nav-game-engine",
     IconNavRemakes = "#nav-remakes",
-    IconNavCatalog = "#nav-catalog",
-
-
-
-
-    // icons sidebar 
-    IconButtonSearch = "#button-search",
-
+    IconNavCatalog = "#nav-catalog", 
+    IconButtonSearch = "#sidebar-button-search",
+    IconChevron = "#sidebar-chevron",
 
 
 

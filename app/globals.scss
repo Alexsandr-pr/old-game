@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 @font-face {
     font-family: 'Pixel Font7';
@@ -112,7 +113,7 @@ html,
 body {
     height: 100%;
     line-height: 1;
-    font-family:Arial;
+    font-family:Inter;
 }
 button,
 input {
@@ -129,13 +130,42 @@ button {
 
 .wrapper {
     display: flex;
-    flex: 0 1 100%;
+    min-height: 100%;
+    gap: 15px;
     flex-direction: column;
 }
 
-.container {
+._container {
     max-width: 1500px;
     padding: 0px 30px;
     margin: 0px auto;
     overflow: hidden;
+}
+
+.main {
+    flex: 1 1 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.main-content {
+    flex: 0 1 56.25%; /* 810/1440 */
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 284px;
+}
+
+.link {
+    color: var(----black);
+    font-family: "Pixel Font7";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
 }

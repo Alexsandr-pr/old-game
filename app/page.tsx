@@ -2,13 +2,11 @@
 
 
 
-export default function Home() {
-   
 
+export default function Home() {
     return (
-      <>
-        Home
-      </>
+        <div className="home">
+            
+        </div>
     );
-    
 }

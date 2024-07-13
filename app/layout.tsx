@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-// import { Pixel Font7 } from "next/font";
+
 import "./globals.scss";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import RightSidebar from "@/components/right-sideber/RightSidebar";
+import LeftSidebar from "@/components/left-sidebar/LeftSidebar";
 
-// const inter = Arial({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -16,13 +19,18 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="ru" >
             <body >
                 <div className="wrapper">
                     <Header/>
-                    <main>
-                        {children}
+                    <main className="main  _container">
+                        <LeftSidebar/>
+                        <div className="main-content">
+                            {children}
+                        </div>
+                        <RightSidebar/>
                     </main>
+                    <Footer/>
                 </div>
             </body>
         </html>

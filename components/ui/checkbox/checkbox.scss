@@ -1,0 +1,43 @@
+.checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .checkbox__input {
+        display: none;
+    }
+    transition: all 0.3s ease 0s;
+    @media(hover:hover) {
+        &:hover {
+        cursor: pointer;
+
+        }
+    }
+}
+
+.checkbox__custom {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--border-dark-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+}
+
+.checkbox__title {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.checkbox__image {
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox__input:checked ~ .checkbox__custom {
+    color: var(--black);
+}
+
+
